@@ -2,6 +2,8 @@
 /* CSS Document */
 
 nav {
-	margin: 0 auto;
+	/*margin: 0 auto;*/
+	float: right
 }
+.monlogo { background-color:darkred;}
 .navbar-nav .active{  color: yellow; background-color: #666; border-radius: 8px;}
