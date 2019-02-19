@@ -1,6 +1,6 @@
 // JavaScript Document
 $("document").ready(function(){
 	
-	$("body").css({backgroundColor: "red"});
+	//$("body").css({backgroundColor: "red"});
 	
 }); 
