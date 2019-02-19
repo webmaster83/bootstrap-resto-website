@@ -1,9 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
-
+.partieheader {
+	background-color:darkred;
+}
 nav {
 	/*margin: 0 auto;*/
 	float: right
 }
-.monlogo { background-color:darkred;}
+/*.monlogo { }*/
 .navbar-nav .active{  color: yellow; background-color: #666; border-radius: 8px;}
