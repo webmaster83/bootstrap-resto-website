@@ -5,10 +5,10 @@
 }
 html, body { height: 100%;}
 body { 
-background: orange url(assets/img/fonpage.jpg) no-repeat top center;
+background:   url(assets/img/fonpage.jpg) no-repeat top center;
 	background-size: cover;
-	overflow: hidden;
-	
+	overflow:hidden-x;
+
 }
 nav {
 	/*margin: 0 auto;*/
@@ -20,9 +20,9 @@ background-size: cover; border-radius: 8px; padding: 13px;
 color: white;}
 
 .navbar-nav .active{  color: yellow; background-color: yellowgreen; border-radius: 8px;}
-
-.bg-light {background-color: #8b0000 !important;}
-
+.bg-special { background-color: darkred; }
+.bg-light {background-color: #fff !important;}
+.container { background-color: orange;}
 #monfooter { color: white; background-color: #000;}
 
 #maboitededialogue {display: none;}

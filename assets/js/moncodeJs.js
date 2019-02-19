@@ -16,6 +16,7 @@ $("document").ready(function () {
 			console.log(prenom);
 			//var bienvenue = "Bonjour " + prenom;
 			$("#specialbonjour").text("Bonjour " + prenom);
+			$("#specialbonjour").css({ backgroundColor:"yellow", fontSize:"22px",});
 			//$("body").prepend(bienvenue);
 		} else {
 		 $("#specialbonjour").val(" ");/* ne se vide pas au click du bouton close*/
