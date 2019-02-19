@@ -18,8 +18,10 @@ $("document").ready(function () {
 			$("#specialbonjour").text("Bonjour " + prenom);
 			//$("body").prepend(bienvenue);
 		} else {
-			$("#specialbonjour").val(" "); /* ne se vide pas*/
+		 $("#specialbonjour").val(" ");/* ne se vide pas au click du bouton close*/
 		}
 
 											});
+	
+	
 });
