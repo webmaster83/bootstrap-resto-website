@@ -13,3 +13,4 @@ background-size: cover; border-radius: 8px; padding: 13px;}
 .navbar-nav .active{  color: yellow; background-color: yellowgreen; border-radius: 8px;}
 .bg-light {background-color: #8b0000 !important;}
 #monfooter { color: white; background-color: #000;}
+#maboitededialogue {display: none;}

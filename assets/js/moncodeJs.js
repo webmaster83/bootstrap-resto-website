@@ -1,6 +1,25 @@
 // JavaScript Document
-$("document").ready(function(){
-	
+$("document").ready(function () {
+
+	$(".entrermodal").val('');
 	//$("body").css({backgroundColor: "red"});
-	
-}); 
+	//$("body").append('hello');
+	$('#maboitededialogue').modal('show');
+	// $(".entrermodal").val('');
+
+	var prenom = $(".entrermodal").val();
+
+
+	$("#maboitededialogue .btn-secondary").click(function () {
+		if (prenom !== null) {
+			var prenom = $(".entrermodal").val();
+			console.log(prenom);
+			//var bienvenue = "Bonjour " + prenom;
+			$("#specialbonjour").text("Bonjour " + prenom);
+			//$("body").prepend(bienvenue);
+		} else {
+			$("#specialbonjour").val(" "); /* ne se vide pas*/
+		}
+
+											});
+});
