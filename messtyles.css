@@ -14,6 +14,10 @@ nav {
 	/*margin: 0 auto;*/
 	float: right
 }
+.jumbotron { 
+background: url(assets/img/bienvenue.jpg) no-repeat top center fixed;
+background-size: cover;
+color: darkred;}
 /*.monlogo { }*/
 .navbar-nav { background: url(assets/img/fondmenu.png) no-repeat ;
 background-size: cover; border-radius: 8px; padding: 13px;
@@ -22,7 +26,7 @@ color: white;}
 .navbar-nav .active{  color: yellow; background-color: yellowgreen; border-radius: 8px;}
 .bg-special { background-color: darkred; }
 .bg-light {background-color: #fff !important;}
-.container { background-color: orange;}
+.container { background-color: #febc17;}
 #monfooter { color: white; background-color: #000;}
 
 #maboitededialogue {display: none;}
