@@ -2,6 +2,7 @@
 /* CSS Document */
 .partieheader {
 	background-color: darkred;
+	height: 75px;
 }
 html, body {
 	height: 100%;
@@ -36,6 +37,7 @@ nav {
 	padding: 13px;
 	color: white;
 }
+#navbarNavAltMarkup { z-index: 10;}
 .navbar-nav .active {
 	color: yellow;
 	background-color: yellowgreen;
