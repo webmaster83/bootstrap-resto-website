@@ -28,7 +28,9 @@ $("document").ready(function () {
 
 											});
 	
-	/*horloge*/
+});	
+
+/*horloge*/
 	/* "Nous sommes le { date et heure }, le restaurant est donc { ouvert / fermé }" en fonction de l'heure et la date de consultation du site.*/
 	
 	/*new Date(year, month, day, hours, minutes, seconds, milliseconds)*/
@@ -36,7 +38,6 @@ $("document").ready(function () {
 	$("#div_horloge").text("Nous sommes le " + madate.toDateString()); // convertit la date sous un format normal sans UTC*/
 	
 	
-});
 
 
 /*javascript*/
@@ -90,13 +91,16 @@ document.getElementById("divhorloge").innerHTML = " Nous sommes le " + jour + " 
 
 if ( jour !== 'dimanche' && jour !== 'lundi' && 12 < heure && heure < 22 ) {
 	document.getElementById("ouvertferme").innerHTML = "Le restaurant est donc OUVERT ";
+		document.getElementById("ouvertferme").style.backgroundColor = "white";
+	
+	document.getElementById("ouvertferme").style.padding = "10px";
 }
 	else {
 		document.getElementById("ouvertferme").innerHTML = "Le restaurant est donc FERME ";
+	document.getElementById("ouvertferme").style.backgroundColor = "white";
+		
+	document.getElementById("ouvertferme").style.padding = "10px";
 	}
-	
-// to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-// your code here
 
 })();
