@@ -1,11 +1,14 @@
 /* Jquery*/
 $("document").ready(function () {
 
+	
+	$("#logo").animate({left: '135px', width:'200px',  height:'67px', opacity:1},5000);
+	$(".jumbotron").fadeIn(5000);
+	$('.seconde').fadeIn(2000);
 	$(".entrermodal").val('');
-	//$("body").css({backgroundColor: "red"});
-	//$("body").append('hello');
+	
 	$('#maboitededialogue').modal('show');
-	// $(".entrermodal").val('');
+	
 
 	var prenom = $(".entrermodal").val();
 
@@ -27,6 +30,8 @@ $("document").ready(function () {
 		}
 
 											});
+	
+	
 	
 });	
 
