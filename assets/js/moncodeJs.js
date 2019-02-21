@@ -1,48 +1,55 @@
 /* Jquery*/
 $("document").ready(function () {
 
-	
-	$("#logo").animate({left: '135px', width:'200px',  height:'67px', opacity:1},5000);
+	$("#logo").animate({
+		left: '135px',
+		width: '200px',
+		height: '67px',
+		opacity: 1
+	}, 5000);
 	$(".jumbotron").fadeIn(5000);
 	$('.seconde').fadeIn(2000);
 	$(".entrermodal").val('');
-	
+
 	$('#maboitededialogue').modal('show');
-	
+
 
 	var prenom = $(".entrermodal").val();
 
 
 	$("#maboitededialogue .btn-secondary").click(function () {
 		if (prenom !== null) {
-			var prenom =" Bonjour " + $(".entrermodal").val();
+			var prenom = " Bonjour " + $(".entrermodal").val();
 			console.log(prenom);
 			//var bienvenue = "Bonjour " + prenom;
 			$("#specialbonjour").text(prenom);
-			$("#specialbonjour").css({ backgroundColor:"yellow", fontSize:"22px",});
+			$("#specialbonjour").css({
+				backgroundColor: "yellow",
+				fontSize: "22px",
+			});
 			//$("body").prepend(bienvenue);
-			
+
 		} else {
-			
-		var vide = $("#specialbonjour").val(" ");
+
+			var vide = $("#specialbonjour").val(" ");
 			$("#specialbonjour").text(vide);
-			console.log(vide);/* ne se vide pas au click bouton close*/
+			console.log(vide); /* ne se vide pas au click bouton close*/
 		}
 
-											});
-	
-	
-	
-});	
+	});
+
+
+
+});
 
 /*horloge*/
-	/* "Nous sommes le { date et heure }, le restaurant est donc { ouvert / fermé }" en fonction de l'heure et la date de consultation du site.*/
-	
-	/*new Date(year, month, day, hours, minutes, seconds, milliseconds)*/
-	/*var madate = new Date();
-	$("#div_horloge").text("Nous sommes le " + madate.toDateString()); // convertit la date sous un format normal sans UTC*/
-	
-	
+/* "Nous sommes le { date et heure }, le restaurant est donc { ouvert / fermé }" en fonction de l'heure et la date de consultation du site.*/
+
+/*new Date(year, month, day, hours, minutes, seconds, milliseconds)*/
+/*var madate = new Date();
+$("#div_horloge").text("Nous sommes le " + madate.toDateString()); // convertit la date sous un format normal sans UTC*/
+
+
 
 
 /*javascript*/
@@ -67,44 +74,43 @@ function horloge(el) {
 }
 */
 /* javascript Date*/
-(function() {
+(function () {
 
-var madate = new Date(); // creer la date 
+	var madate = new Date(); // creer la date 
 
-var semaine = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+	var semaine = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
 
-console.log(madate.getDay()); // affiche 3 donc jeudi aujourd'hui
-	
-var jour = semaine[madate.getDay()-1];// enleve -1 car lundi c 0	
-	
-var datec = madate.getDate();
+	console.log(madate.getDay()); // affiche 3 donc jeudi aujourd'hui
 
-var ans = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+	var jour = semaine[madate.getDay() - 1]; // enleve -1 car lundi c 0	
 
-var mois = ans[madate.getMonth()]; // renvois l'index du mois 
+	var datec = madate.getDate();
 
-var annee = madate.getFullYear(); // renvois 2019
+	var ans = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
 
-var heure = madate.getHours(); // renvois heure 13h ex
+	var mois = ans[madate.getMonth()]; // renvois l'index du mois 
 
-var minute = madate.getMinutes(); // renvois nombre de minutes 45 ex
+	var annee = madate.getFullYear(); // renvois 2019
 
-document.getElementById("divhorloge").innerHTML = " Nous sommes le " + jour + " " + datec + " " + mois + " " + annee + ", " + heure + "h" + minute;
+	var heure = madate.getHours(); // renvois heure 13h ex
 
-/********* compare Date ************/
+	var minute = madate.getMinutes(); // renvois nombre de minutes 45 ex
+
+	document.getElementById("divhorloge").innerHTML = " Nous sommes le " + jour + " " + datec + " " + mois + " " + annee + ", " + heure + "h" + minute;
+
+	/********* compare Date ************/
 	console.log(jour);
 
-if ( jour !== 'dimanche' && jour !== 'lundi' && 12 < heure && heure < 22 ) {
-	document.getElementById("ouvertferme").innerHTML = "Le restaurant est donc OUVERT ";
+	if (jour !== 'dimanche' && jour !== 'lundi' && 12 < heure && heure < 22) {
+		document.getElementById("ouvertferme").innerHTML = "Le restaurant est donc OUVERT ";
 		document.getElementById("ouvertferme").style.backgroundColor = "white";
-	
-	document.getElementById("ouvertferme").style.padding = "10px";
-}
-	else {
+
+		document.getElementById("ouvertferme").style.padding = "10px";
+	} else {
 		document.getElementById("ouvertferme").innerHTML = "Le restaurant est donc FERME ";
-	document.getElementById("ouvertferme").style.backgroundColor = "white";
-		
-	document.getElementById("ouvertferme").style.padding = "10px";
+		document.getElementById("ouvertferme").style.backgroundColor = "white";
+
+		document.getElementById("ouvertferme").style.padding = "10px";
 	}
 
 
